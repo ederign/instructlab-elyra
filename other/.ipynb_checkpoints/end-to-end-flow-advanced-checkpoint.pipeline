@@ -150,7 +150,7 @@
               "label": "Training.ipynb",
               "image": "/notebook/eder-elyra/instructlab-notebooks-collecti/static/elyra/notebook.svg",
               "x_pos": 487,
-              "y_pos": 284,
+              "y_pos": 283,
               "description": "Run notebook file"
             }
           },
@@ -212,8 +212,8 @@
             "ui_data": {
               "label": "LLM Compressor.ipynb",
               "image": "/notebook/eder-elyra/instructlab-notebooks-collecti/static/elyra/notebook.svg",
-              "x_pos": 1063,
-              "y_pos": 290,
+              "x_pos": 1055,
+              "y_pos": 291,
               "description": "Run notebook file"
             }
           },
@@ -344,7 +344,7 @@
               "label": "LLS.ipynb",
               "image": "/notebook/eder-elyra/instructlab-notebooks-collecti/static/elyra/notebook.svg",
               "x_pos": 682,
-              "y_pos": 212,
+              "y_pos": 213,
               "description": "Run notebook file"
             }
           },
@@ -406,7 +406,7 @@
             "ui_data": {
               "label": "SDK.ipynb",
               "image": "/notebook/eder-elyra/instructlab-notebooks-collecti/static/elyra/notebook.svg",
-              "x_pos": 680,
+              "x_pos": 682,
               "y_pos": 370,
               "description": "Run notebook file"
             }
@@ -446,6 +446,70 @@
               }
             }
           ]
+        },
+        {
+          "id": "205b86cc-cd42-433e-966d-6ce265b728a4",
+          "type": "execution_node",
+          "op": "execute-python-node",
+          "app_data": {
+            "component_parameters": {
+              "dependencies": [],
+              "include_subdirectories": false,
+              "outputs": [],
+              "env_vars": [],
+              "kubernetes_pod_annotations": [],
+              "kubernetes_pod_labels": [],
+              "kubernetes_secrets": [],
+              "kubernetes_shared_mem_size": {},
+              "kubernetes_tolerations": [],
+              "mounted_volumes": [],
+              "filename": "training-dsl.py",
+              "runtime_image": "quay.io/harshad16/pipeline-runtime:kfp"
+            },
+            "label": "",
+            "ui_data": {
+              "label": "training-dsl.py",
+              "image": "/notebook/eder-elyra/instructlab-notebooks-collecti/static/elyra/python.svg",
+              "x_pos": 1277,
+              "y_pos": 291.5,
+              "description": "Run Python script"
+            }
+          },
+          "inputs": [
+            {
+              "id": "inPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Input Port"
+                }
+              },
+              "links": [
+                {
+                  "id": "3f437259-0315-4644-a37b-579d68f052b5",
+                  "node_id_ref": "a5becddb-a596-4d8e-a093-67da138f853b",
+                  "port_id_ref": "outPort"
+                }
+              ]
+            }
+          ],
+          "outputs": [
+            {
+              "id": "outPort",
+              "app_data": {
+                "ui_data": {
+                  "cardinality": {
+                    "min": 0,
+                    "max": -1
+                  },
+                  "label": "Output Port"
+                }
+              }
+            }
+          ]
         }
       ],
       "app_data": {
@@ -458,15 +522,16 @@
           "name": "end-to-end-flow-advanced",
           "runtime": "Data Science Pipelines",
           "pipeline_defaults": {
-            "kubernetes_pod_annotations": [],
             "kubernetes_shared_mem_size": {},
             "kubernetes_pod_labels": [],
             "mounted_volumes": [],
             "kubernetes_tolerations": [],
+            "kubernetes_pod_annotations": [],
             "kubernetes_secrets": [],
             "env_vars": [],
-            "runtime_image": "quay.io/modh/runtime-images@sha256:a6e87550d7f932732b8e52c309d356fb76ae0ba0fd0b8566de0ba4ff49c2db84"
-          }
+            "runtime_image": "quay.io/harshad16/pipeline-runtime:kfp"
+          },
+          "pipeline_parameters": []
         }
       },
       "runtime_ref": ""
