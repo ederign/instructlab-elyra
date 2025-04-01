@@ -319,7 +319,78 @@
       ],
       "app_data": {
         "ui_data": {
-          "comments": []
+          "comments": [
+            {
+              "id": "0ceeb4a0-9ebc-460a-9d8f-6630f846d7fe",
+              "x_pos": 91,
+              "y_pos": 152,
+              "width": 175,
+              "height": 58,
+              "content": "**Document Preprocessing**\n",
+              "associated_id_refs": [
+                {
+                  "id": "b7fb29db-a68c-4bc2-9a14-df98ecef2f58",
+                  "node_ref": "48159fc6-7aab-45c4-bcc6-2bbd3c12578d"
+                }
+              ]
+            },
+            {
+              "id": "46c08e81-949d-4812-878d-8213b8131861",
+              "x_pos": 303,
+              "y_pos": 418,
+              "width": 175,
+              "height": 42,
+              "content": "**SDG**",
+              "associated_id_refs": [
+                {
+                  "id": "fc292d06-235d-445c-bb29-9ddfdc155fce",
+                  "node_ref": "c4e282a8-326b-41d3-bc46-9d3e67dc523c"
+                }
+              ]
+            },
+            {
+              "id": "6873718c-864d-4180-9868-f36d77de4a5a",
+              "x_pos": 604,
+              "y_pos": 197,
+              "width": 75,
+              "height": 44,
+              "content": "**Training**\n",
+              "associated_id_refs": [
+                {
+                  "id": "a7f9463f-4970-4f1e-a8fa-57f906c33e71",
+                  "node_ref": "2e0fd00e-9228-4613-8426-caee31a618b7"
+                }
+              ]
+            },
+            {
+              "id": "54d37838-6a42-45bc-87e1-8e8b5e1b259b",
+              "x_pos": 804,
+              "y_pos": 414,
+              "width": 175,
+              "height": 42,
+              "content": "**Evals**",
+              "associated_id_refs": [
+                {
+                  "id": "254d5abf-53a3-4e57-ac35-80b99727038f",
+                  "node_ref": "3ea315c0-c58b-4a16-bb53-b0df74fc5194"
+                }
+              ]
+            },
+            {
+              "id": "6b0ea8fa-c3cc-4634-8432-55f5f36b6221",
+              "x_pos": 1053,
+              "y_pos": 184,
+              "width": 175,
+              "height": 42,
+              "content": "**LLM compressor**",
+              "associated_id_refs": [
+                {
+                  "id": "412e90c3-c9fa-46f6-a46d-67566b58e2cf",
+                  "node_ref": "a5becddb-a596-4d8e-a093-67da138f853b"
+                }
+              ]
+            }
+          ]
         },
         "version": 8,
         "runtime_type": "KUBEFLOW_PIPELINES",
